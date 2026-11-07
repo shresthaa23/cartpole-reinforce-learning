@@ -8,7 +8,7 @@ The code trains the agent on 1000 episodes, using a deep neural network to estim
 ```
 uv venv
 uv pip install -r requirements.txt
-uv run <path-to-file>/project2.py
+uv run src/cart_pole/project2.py
 ```
 
 ## Setup
@@ -72,8 +72,7 @@ at around 900 with some episodes hitting 500, before the average drops back down
 in the 200s, with an average of 233.64. This is much lower than the 475 threshold with the given
 hyperparameters.
 
-**Why low score.**
-- **Good but incomplete policy**
+**Why low score**
 - **γ = .95.** This has a short planning horizon reward of only about 20 steps away. In  
   CartPole, while knowing very far ahead may be useless, knowing a bit farther is crucial as
   a slow drift or slowly growing angle can tilt the pole and cause failure later than the action 
