@@ -1,0 +1,29 @@
+Evaluation: frozen greedy policy (epsilon = 0)
+Training seed: 123 | Eval seed: 420
+Training episodes: 1000 | Training time: 318 s
+Eval episodes: 100
+Mean return: 233.64
+Min / max return: 208 / 299
+Reached 475: No
+
+Training progress (every 50 episodes):
+Episode   50 | epsilon: 0.778 | mean return (last 50):  18.02
+Episode  100 | epsilon: 0.606 | mean return (last 50):  24.76
+Episode  150 | epsilon: 0.471 | mean return (last 50):  36.52
+Episode  200 | epsilon: 0.367 | mean return (last 50):  48.92
+Episode  250 | epsilon: 0.286 | mean return (last 50): 135.26
+Episode  300 | epsilon: 0.222 | mean return (last 50): 189.34
+Episode  350 | epsilon: 0.173 | mean return (last 50): 185.08
+Episode  400 | epsilon: 0.135 | mean return (last 50): 163.38
+Episode  450 | epsilon: 0.105 | mean return (last 50): 156.72
+Episode  500 | epsilon: 0.082 | mean return (last 50): 155.48
+Episode  550 | epsilon: 0.063 | mean return (last 50): 148.00
+Episode  600 | epsilon: 0.049 | mean return (last 50): 147.48
+Episode  650 | epsilon: 0.038 | mean return (last 50): 140.46
+Episode  700 | epsilon: 0.030 | mean return (last 50): 144.92
+Episode  750 | epsilon: 0.023 | mean return (last 50): 120.14
+Episode  800 | epsilon: 0.018 | mean return (last 50): 159.56
+Episode  850 | epsilon: 0.014 | mean return (last 50): 136.48
+Episode  900 | epsilon: 0.011 | mean return (last 50): 206.24
+Episode  950 | epsilon: 0.010 | mean return (last 50): 207.84
+Episode 1000 | epsilon: 0.010 | mean return (last 50): 154.58

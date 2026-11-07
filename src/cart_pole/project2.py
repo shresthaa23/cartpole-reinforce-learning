@@ -39,6 +39,7 @@ gradient_count = 0
 epsilon = EPSILON
 episode_return = 0
 episode_returns = []
+batch_prints = []
 
 # setup models
 def build_model():
@@ -111,7 +112,9 @@ for episode in range(NUM_EPISODES):
 
     # printing progress every 50
     if (episode + 1) % 50 == 0:
-        print("Episode", episode + 1, "| epsilon:", round(epsilon, 3), "| mean return (last 50):", np.mean(episode_returns[-50:]))
+        statement = f"Episode {episode + 1:4d} | epsilon: {epsilon:.3f} | mean return (last 50): {np.mean(episode_returns[-50:]):6.2f}"
+        batch_prints.append(statement)
+        print(statement)
 
 env.close()
 train_time = time.time() - train_start
@@ -152,6 +155,8 @@ results = (
     f"Min / max return: {min(all_rewards):.0f} / {max(all_rewards):.0f}\n"
     f"Reached {SOLVED_THRESHOLD}: {'Yes' if eval_mean >= SOLVED_THRESHOLD else 'No'}\n"
 )
+results += "\nTraining progress (every 50 episodes):\n" + "\n".join(batch_prints) + "\n"
+
 print("\n" + results)
 
 os.makedirs("results/", exist_ok=True)
