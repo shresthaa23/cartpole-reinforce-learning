@@ -1,0 +1,22 @@
+[project]
+name = "cart-pole"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Alex Shrestha", email = "ashrest6@terpmail.umd.edu" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "gymnasium>=1.4.0",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "tensorflow>=2.21.0",
+]
+
+[project.scripts]
+cart-pole = "cart_pole:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
